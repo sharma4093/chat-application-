@@ -51,6 +51,9 @@ const SignUp = () => {
     return isValid;
   };
 
+
+  //  const BACKEND_URL = "http://localhost:4545/"
+   const BACKEND_URL = "https://chat-phi-lake-18.vercel.app/"
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -72,7 +75,7 @@ const SignUp = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:4545/api/signup", formData);
+      const response = await axios.post(BACKEND_URL, formData);
       if(response.data.status === 1) {
         toast.success(response.data.message);
         navigate('/login');

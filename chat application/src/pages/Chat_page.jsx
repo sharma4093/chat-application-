@@ -3,7 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import io from 'socket.io-client';
 import { useNavigate } from 'react-router-dom';
 
-const BACKEND_URL = "http://localhost:4545";
+// const BACKEND_URL = "https://chat-prashant-sharmas-projects-5c78faa6.vercel.";
+// const BACKEND_URL = "http://localhost:4545";
+const BACKEND_URL = "https://chat-phi-lake-18.vercel.app/";
 
 const Chat = () => {
   const user = JSON.parse(localStorage.getItem("user"));
